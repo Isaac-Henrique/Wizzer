@@ -1,2 +1,29 @@
+//Cores principais
 $primario:#0af;
 $secundario:#333;
+$cinza-claro:lighten(black,90%);
+$cinza:lighten(black,75%);
+$cinza-escuro:lighten(black,50%);
+$sucesso: #22aa33;
+$info: #0af;
+$atencao: #e69f00;
+$alerta: #cc3333;
+//\-Cores principais
+
+//Geral
+$border-radius:3px;
+//\-Geral
+
+//Cores dos botões
+$btn-padding:8px;
+$btn-darken:10%;
+$btn-light:10%;
+$btn-normal:$cinza;
+$btn-primario:$primario;
+$btn-secundario:$secundario;
+$btn-sucesso:$sucesso;
+$btn-info:$info;
+$btn-atencao:$atencao;
+$btn-alerta:$alerta;
+$btn-desativado:$cinza-claro;
+//\-Cores botoes*/

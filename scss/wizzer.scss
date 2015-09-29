@@ -1,3 +1,7 @@
-@import "variaveis";//Variáveis Globais
+@charset "UTF-8";
+
+@import "variaveis";//Variaveis Globais
 @import "mixins";//Funções globais
 @import "normalize";//Normalizar CSS
+@import "text.scss";//Texto (cores e formatação)
+@import "botoes.scss";//Botões
