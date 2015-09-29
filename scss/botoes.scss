@@ -1,247 +1,192 @@
 /*Botoes*/
-[class*=btn-]{
+.btn{
   padding: 8px 20px;
-  color: #555;
-  border:1px solid $cinza-claro;
+  border:1px solid transparent;
   cursor: pointer;
   margin: 4px;
   @include border-radius($border-radius);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: $btn-normal;
+  color: #333;
 }
 
 //Default
-[class*=btn-]:disabled,
-.btn-desativado{
-  background: $btn-desativado;
+.btn:disabled,
+.btn.desativado{
+  opacity: 0.4;
   border-color: $cinza;
   cursor: not-allowed;
 }
 
-.btn-normal{
-  background: $btn-normal;
-  border-color: darken($btn-normal, $btn-darken);
-  color: #333;
-}
-
-.btn-normal:hover{
+.btn:not(.desativado):hover{
   background: darken($btn-normal, $btn-darken);
   color: #fff;
 }
-.btn-primario{
+.btn.primario{
   background: $btn-primario;
-  border-color: darken($btn-primario, $btn-darken);
   color: #fff;
 }
 
-.btn-primario:hover{
+.btn.primario:not(.desativado):hover{
   background: darken($btn-primario, $btn-darken);
   color: #fff;
 }
 
 
-.btn-secundario{
+.btn.secundario{
   background: $btn-secundario;
-  border-color: darken($btn-secundario, $btn-darken);
   color: #fff;
 }
 
-.btn-secundario:hover{
+.btn.secundario:not(.desativado):hover{
   background: darken($btn-secundario, $btn-darken);
   color: #fff;
 }
-.btn-sucesso{
+.btn.sucesso{
   background: $btn-sucesso;
-  border-color: darken($btn-sucesso, $btn-darken);
   color: #fff;
 }
 
-.btn-sucesso:hover{
+.btn.sucesso:not(.desativado):hover{
   background: darken($btn-sucesso, $btn-darken);
   color: #fff;
 }
-.btn-info{
+.btn.info{
   background: $btn-info;
-  border-color: darken($btn-info, $btn-darken);
   color: #fff;
 }
 
-.btn-info:hover{
+.btn.info:not(.desativado):hover{
   background: darken($btn-info, $btn-darken);
   color: #fff;
 }
-.btn-atencao{
+.btn.atencao{
   background: $btn-atencao;
-  border-color: darken($btn-atencao, $btn-darken);
   color: #fff;
 }
 
-.btn-atencao:hover{
+.btn.atencao:not(.desativado):hover{
   background: darken($btn-atencao, $btn-darken);
   color: #fff;
 }
-.btn-alerta{
+.btn.alerta{
   background: $btn-alerta;
-  border-color: darken($btn-alerta, $btn-darken);
   color: #fff;
 }
 
-.btn-alerta:hover{
+.btn.alerta:not(.desativado):hover{
   background: darken($btn-alerta, $btn-darken);
   color: #fff;
 }
 
-//Flat
-[class*=btn-].flat,
-.flat{
-  border-color: transparent;
-}
-[class*=btn-].flat:disabled,
-.btn-desativado.flat{
-  background: $btn-desativado;
-  border-color: transparent;
-  cursor: not-allowed;
-}
-
-.btn-normal.flat{
-  background: lighten($btn-normal, $btn-light);
-  color: #333;
-}
-
-.btn-normal.flat:hover{
-  background: lighten($btn-normal, $btn-light);
-  color: #fff;
-}
-.btn-primario.flat{
-  background: lighten($btn-primario, $btn-light);
-  color: #fff;
-}
-
-.btn-primario.flat:hover{
-  background: lighten($btn-primario, $btn-light);
-  color: #fff;
-}
-
-.btn-secundario.flat{
-  background: lighten($btn-secundario, $btn-light);
-  color: #fff;
-}
-
-.btn-secundario.flat:hover{
-  background: lighten($btn-secundario, $btn-light);
-  color: #fff;
-}
-.btn-sucesso.flat{
-  background: lighten($btn-sucesso, $btn-light);
-  color: #fff;
-}
-
-.btn-sucesso.flat:hover{
-  background: lighten($btn-sucesso, $btn-light);
-  color: #fff;
-}
-.btn-info.flat{
-  background: lighten($btn-info, $btn-light);
-  color: #fff;
-}
-
-.btn-info.flat:hover{
-  background: lighten($btn-info, $btn-light);
-  color: #fff;
-}
-.btn-atencao.flat{
-  background: lighten($btn-atencao, $btn-light);
-  color: #fff;
-}
-
-.btn-atencao.flat:hover{
-  background: lighten($btn-atencao, $btn-light);
-  color: #fff;
-}
-.btn-alerta.flat{
-  background: lighten($btn-alerta, $btn-light);
-  color: #fff;
-}
-
-.btn-alerta.flat:hover{
-  background: lighten($btn-alerta, $btn-light);
-  color: #fff;
-}
 //Linha
-
-[class*=btn-].linha,
+.btn.linha,
 .linha{
   border-width: 2px;
   padding: 7px 19px;
-  background: transparent;
-
+  background: transparent !important;
+  text-shadow: none !important;
 }
-[class*=btn-].linha:disabled,
-.btn-desativado.linha{
+
+.btn.linha:disabled,
+.btn.linha.desativado{
   border-color: $cinza;
   cursor: not-allowed;
   color: $cinza-escuro;
 }
 
-.btn-normal.linha{
+.btn.linha{
+  border-color: $btn-normal;
+  color: $btn-normal;
+}
+
+.btn.linha:not(.desativado):hover{
   border-color: darken($btn-normal,30%);
   color: darken($btn-normal,30%);
 }
-
-.btn-normal.linha:hover{
-  border-color: lighten(darken($btn-normal,30%), $btn-light);
-  color: lighten(darken($btn-normal,30%), $btn-light);
-}
-.btn-primario.linha{
+.btn.primario.linha{
+  border-color: $btn-primario;
   color: $btn-primario;
 }
 
-.btn-primario.linha:hover{
+.btn.primario.linha:not(.desativado):hover{
   border-color: lighten($btn-primario, $btn-light);
   color: lighten($btn-primario, $btn-light);
 }
 
-.btn-secundario.linha{
+.btn.secundario.linha{
+  border-color: $btn-secundario;
   color: $secundario;
 }
 
-.btn-secundario.linha:hover{
+.btn.secundario.linha:not(.desativado):hover{
   border-color: lighten($btn-secundario, $btn-light);
   color: lighten($btn-secundario, $btn-light);
 }
-.btn-sucesso.linha{
+.btn.sucesso.linha{
+  border-color: $btn-sucesso;
   color: $btn-sucesso;
 }
 
-.btn-sucesso.linha:hover{
+.btn.sucesso.linha:not(.desativado):hover{
   border-color: lighten($btn-sucesso, $btn-light);
   color: lighten($btn-sucesso, $btn-light);
 }
-.btn-info.linha{
+.btn.info.linha{
+  border-color: $btn-info;
   color: $btn-info;
 }
-
-.btn-info.linha:hover{
+.btn.info.linha:not(.desativado):hover{
   border-color: lighten($btn-info, $btn-light);
   color: lighten($btn-info, $btn-light);
 }
-.btn-atencao.linha{
+
+.btn.atencao.linha{
+  border-color: $btn-atencao;
   color: $btn-atencao;
 }
 
-.btn-atencao.linha:hover{
+.btn.atencao.linha:not(.desativado):hover{
   border-color: lighten($btn-atencao, $btn-light);
   color: lighten($btn-atencao, $btn-light);
 }
-.btn-alerta.linha{
+.btn.alerta.linha{
+  border-color: $btn-alerta;
   color: $btn-alerta;
 }
 
-.btn-alerta.linha:hover{
+.btn.alerta.linha:not(.desativado):hover{
   border-color: lighten($btn-alerta, $btn-light);
   color: lighten($btn-alerta, $btn-light);
 }
 
-[class*=btn-].circle,
-.circle{
+//Botão ativo
+//Normal
+.btn.ativado{
+  color: #fff;
+}
+.btn.ativado:not(.linha){
+  background: darken($btn-normal, $btn-darken+10%);
+  color: #fff;
+}
+.btn.ativado.linha{
+  border-color: darken($btn-normal, $btn-darken+10%);
+  color: darken($btn-normal, $btn-darken+10%);
+}
+
+.btn.primario.ativado:not(.linha){
+  background: darken($btn-primario, $btn-darken+10%);
+  color: #fff;
+}
+.btn.primario.ativado:not(.linha){
+  background: darken($btn-primario, $btn-darken+10%);
+  color: #fff;
+}
+//\-Botão ativo
+
+
+//Circle
+.btn.circle, .circle{
   width: 38px;
   height: 37px;
   padding: 0;
@@ -250,42 +195,3 @@
 }
 
 /*\-Botões*/
-.dropdown{
-  text-align: right;
-  display: table;
-}
-
-.dropdown > .dropdown-btn{
-  display:inline-block;
-  padding:8px;
-  text-decoration: none;
-  color: #333;
-  background: #eee;
-}
-
-.dropdown > .dropdown-menu{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #eee;
-  border-top:2px solid $cinza-claro;
-}
-.dropdown > .dropdown-menu > li{
-  display: block;
-}
-.dropdown > .dropdown-menu > li a{
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-  color: #333;
-}
-.dropdown > .dropdown-menu > li a:hover{
-  color: #fff;
-  background: $cinza-claro;
-}
-.dropdown > .dropdown-menu > .line{
-  display: block;
-  padding: 0;
-  margin: 2px 0;
-  border-bottom:1px solid $cinza-claro;
-}
