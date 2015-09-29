@@ -3,8 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <title>Wizzer Documentation</title>
+    <link rel="stylesheet" href="scss/wizzer.css">
 </head>
 <body>
+<h1>Wizzer Framework</h1>
+<p>Framework básico com os componentes suficientes para dar um start em seu projeto.</p>
 
+<h2>Mensagens de erro e avisos:</h2>
+<p class="primario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+<p class="secundario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+<p class="sucesso">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+<p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+<p class="atencao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+<p class="alerta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur modi voluptates?</p>
+
+<h2>Botões</h2>
+
+<h3>Estado padrão:</h3>
+<table style="text-align: center">
+    <thead>
+    <tr>
+        <th>Tipo</th>
+        <th>Normal</th>
+        <th>Primário</th>
+        <th>Secundário</th>
+        <th>Sucesso</th>
+        <th>Informação</th>
+        <th>Atenção</th>
+        <th>Alerta</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Padrão</td>
+        <td><button class="btn">Botão</button></td>
+        <td><button class="btn primario">Botão</button></td>
+        <td><button class="btn secundario">Botão</button></td>
+        <td><button class="btn sucesso">Botão</button></td>
+        <td><button class="btn info">Botão</button></td>
+        <td><button class="btn atencao">Botão</button></td>
+        <td><button class="btn alerta">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Linha</td>
+        <td><button class="btn linha">Botão</button></td>
+        <td><button class="btn primario linha">Botão</button></td>
+        <td><button class="btn secundario linha">Botão</button></td>
+        <td><button class="btn sucesso linha">Botão</button></td>
+        <td><button class="btn info linha">Botão</button></td>
+        <td><button class="btn atencao linha">Botão</button></td>
+        <td><button class="btn alerta linha">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Redondo</td>
+        <td><button class="btn circle">B</button></td>
+        <td><button class="btn primario circle">B</button></td>
+        <td><button class="btn secundario circle">B</button></td>
+        <td><button class="btn sucesso circle">B</button></td>
+        <td><button class="btn info circle">B</button></td>
+        <td><button class="btn atencao circle">B</button></td>
+        <td><button class="btn alerta circle">B</button></td>
+    </tr>
+
+    <tr>
+        <td>Redondo-Linha</td>
+        <td><button class="btn circle linha">B</button></td>
+        <td><button class="btn primario circle linha">B</button></td>
+        <td><button class="btn secundario circle linha">B</button></td>
+        <td><button class="btn sucesso circle linha">B</button></td>
+        <td><button class="btn info circle linha">B</button></td>
+        <td><button class="btn atencao circle linha">B</button></td>
+        <td><button class="btn alerta circle linha">B</button></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Estado Desativado:</h3>
+<table style="text-align: center">
+    <thead>
+    <tr>
+        <th>Tipo</th>
+        <th>Normal</th>
+        <th>Primário</th>
+        <th>Secundário</th>
+        <th>Sucesso</th>
+        <th>Informação</th>
+        <th>Atenção</th>
+        <th>Alerta</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Padrão</td>
+        <td><button class="btn desativado">Botão</button></td>
+        <td><button class="btn primario desativado">Botão</button></td>
+        <td><button class="btn secundario desativado">Botão</button></td>
+        <td><button class="btn sucesso desativado">Botão</button></td>
+        <td><button class="btn info desativado">Botão</button></td>
+        <td><button class="btn atencao desativado">Botão</button></td>
+        <td><button class="btn alerta desativado">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Linha</td>
+        <td><button class="btn linha desativado">Botão</button></td>
+        <td><button class="btn primario linha desativado">Botão</button></td>
+        <td><button class="btn secundario linha desativado">Botão</button></td>
+        <td><button class="btn sucesso linha desativado">Botão</button></td>
+        <td><button class="btn info linha desativado">Botão</button></td>
+        <td><button class="btn atencao linha desativado">Botão</button></td>
+        <td><button class="btn alerta linha desativado">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Redondo</td>
+        <td><button class="btn circle desativado">B</button></td>
+        <td><button class="btn primario circle desativado">B</button></td>
+        <td><button class="btn secundario circle desativado">B</button></td>
+        <td><button class="btn sucesso circle desativado">B</button></td>
+        <td><button class="btn info circle desativado">B</button></td>
+        <td><button class="btn atencao circle desativado">B</button></td>
+        <td><button class="btn alerta circle desativado">B</button></td>
+    </tr>
+
+    <tr>
+        <td>Redondo-Linha</td>
+        <td><button class="btn circle linha desativado">B</button></td>
+        <td><button class="btn primario circle linha desativado">B</button></td>
+        <td><button class="btn secundario circle linha desativado">B</button></td>
+        <td><button class="btn sucesso circle linha desativado">B</button></td>
+        <td><button class="btn info circle linha desativado">B</button></td>
+        <td><button class="btn atencao circle linha desativado">B</button></td>
+        <td><button class="btn alerta circle linha desativado">B</button></td>
+    </tr>
+    </tbody>
+</table>
+<h3>Estado Ativado:</h3>
+<table style="text-align: center">
+    <thead>
+    <tr>
+        <th>Tipo</th>
+        <th>Normal</th>
+        <th>Primário</th>
+        <th>Secundário</th>
+        <th>Sucesso</th>
+        <th>Informação</th>
+        <th>Atenção</th>
+        <th>Alerta</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Padrão</td>
+        <td><button class="btn ativado">Botão</button></td>
+        <td><button class="btn primario ativado">Botão</button></td>
+        <td><button class="btn secundario ativado">Botão</button></td>
+        <td><button class="btn sucesso ativado">Botão</button></td>
+        <td><button class="btn info ativado">Botão</button></td>
+        <td><button class="btn atencao ativado">Botão</button></td>
+        <td><button class="btn alerta ativado">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Linha</td>
+        <td><button class="btn linha ativado">Botão</button></td>
+        <td><button class="btn primario linha ativado">Botão</button></td>
+        <td><button class="btn secundario linha ativado">Botão</button></td>
+        <td><button class="btn sucesso linha ativado">Botão</button></td>
+        <td><button class="btn info linha ativado">Botão</button></td>
+        <td><button class="btn atencao linha ativado">Botão</button></td>
+        <td><button class="btn alerta linha ativado">Botão</button></td>
+    </tr>
+    <tr>
+        <td>Redondo</td>
+        <td><button class="btn circle ativado">B</button></td>
+        <td><button class="btn primario circle ativado">B</button></td>
+        <td><button class="btn secundario circle ativado">B</button></td>
+        <td><button class="btn sucesso circle ativado">B</button></td>
+        <td><button class="btn info circle ativado">B</button></td>
+        <td><button class="btn atencao circle ativado">B</button></td>
+        <td><button class="btn alerta circle ativado">B</button></td>
+    </tr>
+
+    <tr>
+        <td>Redondo-Linha</td>
+        <td><button class="btn circle linha ativado">B</button></td>
+        <td><button class="btn primario circle linha ativado">B</button></td>
+        <td><button class="btn secundario circle linha ativado">B</button></td>
+        <td><button class="btn sucesso circle linha ativado">B</button></td>
+        <td><button class="btn info circle linha ativado">B</button></td>
+        <td><button class="btn atencao circle linha ativado">B</button></td>
+        <td><button class="btn alerta circle linha ativado">B</button></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
