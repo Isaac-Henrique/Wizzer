@@ -159,32 +159,6 @@
   border-color: lighten($btn-alerta, $btn-light);
   color: lighten($btn-alerta, $btn-light);
 }
-
-//Bot�o ativo
-//Normal
-.btn.ativado{
-  color: #fff;
-}
-.btn.ativado:not(.linha){
-  background: darken($btn-normal, $btn-darken+10%);
-  color: #fff;
-}
-.btn.ativado.linha{
-  border-color: darken($btn-normal, $btn-darken+10%);
-  color: darken($btn-normal, $btn-darken+10%);
-}
-
-.btn.primario.ativado:not(.linha){
-  background: darken($btn-primario, $btn-darken+10%);
-  color: #fff;
-}
-.btn.primario.ativado:not(.linha){
-  background: darken($btn-primario, $btn-darken+10%);
-  color: #fff;
-}
-//\-Bot�o ativo
-
-
 //Circle
 .btn.circle, .circle{
   width: 38px;
@@ -194,4 +168,115 @@
   @include border-radius(50%);
 }
 
-/*\-Bot�es*/
+//Botão ativo
+//Normal
+
+
+.btn.ativado:not(.linha){color: #fff;}
+.btn.ativado.linha{
+  border-color: darken($btn-normal, $btn-darken+5%);
+  color: darken($btn-normal, $btn-darken+5%);
+}
+.btn.ativado.linha:hover{
+  border-color: darken($btn-normal, $btn-darken+5%) !important;
+  color: darken($btn-normal, $btn-darken+5%);
+}
+
+//Normal
+.btn.ativado:not(.linha){
+  background: darken($btn-normal, $btn-darken+5%);
+  color: #fff;
+}
+
+.btn.ativado.linha{
+  border-color: darken($btn-normal, $btn-darken+5%);
+  color: darken($btn-normal, $btn-darken+10%);
+}
+
+//Primario
+.btn.primario.ativado:not(.linha){
+  background: darken($btn-primario, $btn-darken+5%);
+  color: #fff;
+}
+.btn.primario.ativado.linha{
+  border-color: darken($btn-primario, $btn-darken+5%);
+  color: darken($btn-primario, $btn-darken+5%);
+}
+.btn.primario.ativado.linha:hover{
+  border-color: darken($btn-primario, $btn-darken+5%) !important;
+  color: darken($btn-primario, $btn-darken+5%);
+}
+
+//Secundário
+.btn.secundario.ativado:not(.linha){
+  background: darken($btn-secundario, $btn-darken+5%);
+  color: #fff;
+}
+.btn.secundario.ativado.linha{
+  border-color: darken($btn-secundario, $btn-darken+5%);
+  color: darken($btn-secundario, $btn-darken+5%);
+}
+.btn.secundario.ativado.linha:hover{
+  border-color: darken($btn-secundario, $btn-darken+5%) !important;
+  color: darken($btn-secundario, $btn-darken+5%);
+}
+
+//Sucesso
+.btn.sucesso.ativado:not(.linha){
+  background: darken($btn-sucesso, $btn-darken+5%);
+  color: #fff;
+}
+.btn.sucesso.ativado.linha{
+  border-color: darken($btn-sucesso, $btn-darken+5%);
+  color: darken($btn-sucesso, $btn-darken+5%);
+}
+.btn.sucesso.ativado.linha:hover{
+  border-color: darken($btn-sucesso, $btn-darken+5%) !important;
+  color: darken($btn-sucesso, $btn-darken+5%);
+}
+
+//Info
+.btn.info.ativado:not(.linha){
+  background: darken($btn-info, $btn-darken+5%);
+  color: #fff;
+}
+.btn.info.ativado.linha{
+  border-color: darken($btn-info, $btn-darken+5%);
+  color: darken($btn-info, $btn-darken+5%);
+}
+.btn.info.ativado.linha:hover{
+  border-color: darken($btn-info, $btn-darken+5%) !important;
+  color: darken($btn-info, $btn-darken+5%);
+}
+
+//Atenção
+.btn.atencao.ativado:not(.linha){
+  background: darken($btn-atencao, $btn-darken+5%);
+  color: #fff;
+}
+.btn.atencao.ativado.linha{
+  border-color: darken($btn-atencao, $btn-darken+5%);
+  color: darken($btn-atencao, $btn-darken+5%);
+}
+.btn.atencao.ativado.linha:hover{
+  border-color: darken($btn-atencao, $btn-darken+5%) !important;
+  color: darken($btn-atencao, $btn-darken+5%);
+}
+//Alerta
+.btn.alerta.ativado:not(.linha){
+  background: darken($btn-alerta, $btn-darken+5%);
+  color: #fff;
+}
+.btn.alerta.ativado.linha{
+  border-color: darken($btn-alerta, $btn-darken+5%);
+  color: darken($btn-alerta, $btn-darken+5%);
+}
+.btn.alerta.ativado.linha:hover{
+  border-color: darken($btn-alerta, $btn-darken+5%) !important;
+  color: darken($btn-alerta, $btn-darken+5%);
+}
+
+//\-Botão ativo
+
+
+/*\-Botões*/
